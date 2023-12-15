@@ -5,10 +5,10 @@ function New() {
     <>
         <h1>Create A New Pokemon</h1>
         <form action="/pokemon" method="POST"><br/>
-        Name: <input style={{margin:"1em"}} type="text" name="name" /><br/>
-        Color: <input  style={{margin:"1em"}}type="text" name="color" /><br/>
-        ReadyToCatchEmAll: <input style={{margin:"1em"}}type="checkbox" name="Ready to Catch Em" /><br/>
-        <input style={{margin:"1em"}} type="submit" value="Create pokemon" />
+        Name: <input type="text" name="name" /><br/>
+        Color: <input type="text" name="color" /><br/>
+        Pokemon: <input type="checkbox" name="isAPokemon" /><br/>
+        <input type="submit" value="Create pokemon" />
         </form>
     </>
   )

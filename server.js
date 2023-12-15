@@ -25,13 +25,8 @@ app.get('/pokemon/new', (req, res) => {
     res.render('New');
 })
 app.post('/pokemon', (req, res) => {
-    if (req.body.readyToCatchEm === 'on') {
-        req.body.readyToCatchEm = true;
-    } else {
-        req.body.readyToCatchEm = false;
-    }
+    req.body.isAPokemon = true;
     pokemon.push(req.body);
-    console.log(req.body);
     res.redirect('/pokemon');
 })
 app.get('/pokemon/:id', (req, res) => {
