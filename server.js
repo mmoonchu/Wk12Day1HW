@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 })
 app.get('/pokemon', (req, res) => {
     res.render('Index', {
-        pokemons: pokemon
+        pokemonProp: pokemon
     });
 })
 
