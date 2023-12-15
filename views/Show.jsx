@@ -6,7 +6,7 @@ function Show(props) {
         <h1>Gotta Catch 'Em All</h1>
         <h2>{props.pokemonProp.name}</h2>
         <img src={`${props.pokemonProp.img}.jpg`} />
-        <a href='/'>back</a>
+        <a href='/pokemon'>back</a>
     </>
   )
 }
